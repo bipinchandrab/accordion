@@ -1,0 +1,57 @@
+.accordion {
+    background-color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    border:none;
+    font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    color: #1A1A1A;
+    line-height: 29px;
+  }
+  .accordion.border{
+    /* border-bottom: 1px solid #E1E1E1; */
+  }
+  .accordian_active, .accordion:hover {
+    background-color: #F8F8F8;
+  }
+  
+  
+  button:focus-visible{
+      border:1px solid #006030;
+  }
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .accordian_active:after {
+    content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 30px;
+    color:#1a1a1a;
+    font-family:'Open Sans';
+    font-weight:500;
+    font-size:16px;
+    line-height:29px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .anchor_underline{
+	text-decoration: underline; text-decoration-color: #2a2a2a; text-decoration-thickness: 1px; text-underline-offset: 2px;
+}
+.anchor_underline:hover{
+	text-decoration: underline;
+}
